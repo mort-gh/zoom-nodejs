@@ -31,4 +31,4 @@ io.on('connection', (socket) => {
 });
 
 console.log(process.memoryUsage().rss);
-server.listen(3030);
+server.listen(process.env.PORT || 3030);
